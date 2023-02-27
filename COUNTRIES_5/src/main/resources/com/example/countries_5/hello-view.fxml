@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="436.0" prefWidth="608.0" style="-fx-background-color: SKYBLUE;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.countries_5.HelloController">
+   <children>
+      <ToggleButton fx:id="lesothoB" layoutX="36.0" layoutY="347.0" mnemonicParsing="false" onAction="#ls" prefHeight="34.0" prefWidth="116.0" text="LESOTHO">
+         <toggleGroup>
+            <ToggleGroup fx:id="group" />
+         </toggleGroup>
+      </ToggleButton>
+      <ToggleButton fx:id="indiaB" layoutX="37.0" layoutY="391.0" mnemonicParsing="false" onAction="#in" prefHeight="34.0" prefWidth="116.0" text="INDIA" toggleGroup="$group" />
+      <ToggleButton fx:id="russiaB" layoutX="251.0" layoutY="348.0" mnemonicParsing="false" onAction="#ru" prefHeight="34.0" prefWidth="116.0" text="RUSSIA" toggleGroup="$group" />
+      <ToggleButton fx:id="clearB" layoutX="251.0" layoutY="391.0" mnemonicParsing="false" onAction="#cl" prefHeight="34.0" prefWidth="116.0" text="CLEAR" toggleGroup="$group" />
+      <ToggleButton fx:id="germanyB" layoutX="462.0" layoutY="349.0" mnemonicParsing="false" onAction="#ge" prefHeight="34.0" prefWidth="116.0" text="GERMANY" toggleGroup="$group" />
+      <ToggleButton fx:id="yemenB" layoutX="462.0" layoutY="391.0" mnemonicParsing="false" onAction="#ye" prefHeight="34.0" prefWidth="116.0" text="YEMEN" toggleGroup="$group" />
+      <VBox layoutX="74.0" layoutY="75.0" prefHeight="262.0" prefWidth="488.0" style="-fx-background-color: violet;">
+         <children>
+            <HBox fx:id="color1" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: white;" />
+            <HBox fx:id="color2" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: white;" />
+            <HBox fx:id="color3" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: white;" />
+         </children>
+      </VBox>
+      <Label layoutX="138.0" layoutY="-2.0" prefHeight="34.0" prefWidth="372.0" text="FLAGS OF DIFFERENT COUNTRIES">
+         <textFill>
+            <LinearGradient endX="0.7772511848341233" endY="1.0" startX="0.24644549763033174" startY="0.45023696682464454">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.5699999928474426" green="0.14249999821186066" blue="0.5333571434020996" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="label" layoutX="164.0" layoutY="31.0" prefHeight="34.0" prefWidth="263.0" style="-fx-background-color: red;">
+         <font>
+            <Font name="Consolas Bold" size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
